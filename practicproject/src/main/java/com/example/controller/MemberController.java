@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.domain.MemberVO;
-
-import memberservice.MemberService;
+import com.example.sevice.MemberService;
 
 @Controller
 @RequestMapping("/member/*")
 public class MemberController {
 	
+
 	// @GetMapping("/login")은 로그인 할 수있는 화면 보여주기
 	@GetMapping("/login")
 	public String loginForm() {
