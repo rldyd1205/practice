@@ -14,6 +14,7 @@ public class MemberController {
 		System.out.println("로그인 화면 호출됨...");
 		return "member/login";
 	}// loginForm
+	
 	// @GetMapping("/login")은 회원가입 할 수있는 화면 보여주기
 	@GetMapping("/join")
 	public String joinForm() {
