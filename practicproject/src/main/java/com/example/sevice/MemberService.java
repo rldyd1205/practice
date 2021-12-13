@@ -9,15 +9,15 @@ import com.example.mapper.MemberMapper;
 @Service
 @Transactional
 public class MemberService {
-
+	
 	private MemberMapper memberMapper;
 
 	public MemberService(MemberMapper memberMapper) {
 		super();
 		this.memberMapper = memberMapper;
 	}
-
-	public MemberVO getMemberById(String id) {
-		return memberMapper.getMemberById(id);
-	}
+	
+ 	public MemberVO getMemberId(String id) {
+ 		return memberMapper.getMemberById(id);
+ 	}
 }

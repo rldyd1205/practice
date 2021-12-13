@@ -1,5 +1,6 @@
 package com.example.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,7 +14,11 @@ import com.example.sevice.MemberService;
 @RequestMapping("/member/*")
 public class MemberController {
 	
-
+	@Autowired
+	private MemberService memberService;
+	
+	
+	
 	// @GetMapping("/login")은 로그인 할 수있는 화면 보여주기
 	@GetMapping("/login")
 	public String loginForm() {
